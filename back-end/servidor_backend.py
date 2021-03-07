@@ -9,7 +9,7 @@ def inicio():
 @app.route("/listar_girassol")
 def listar_girassol():
    
-    girassol = db.session.query(girassol).all()
+    girassol = db.session.query(Girassol).all()
  
     girassol_em_json = [ x.json() for x in girassol ]
  
